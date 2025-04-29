@@ -3,6 +3,9 @@
 
 package br.com.fiap.models;
 
+import br.com.fiap.enums.TipoCategoriaEnum;
+import br.com.fiap.enums.TipoProdutoEnum;
+
 import java.util.Scanner;
 
 public abstract class Produto  {
@@ -11,38 +14,26 @@ public abstract class Produto  {
     private String tipo;
     protected String nome;
     private String marca;
-    private double preco;
+    protected double preco;
     private String descricao;
     private String categoria;
     private int avaliacao;
-
-
-
+    private TipoCategoriaEnum tipocategoria;
+    private TipoProdutoEnum tipoproduto;
 
     //métodos
 
-    public void exibirProduto(){
-
-    }
-
+    public void exibirMenu(){}
+    public void exibirProduto(){}
 
     //+calcularDesconto():double
-    public double calcularDesconto(double desconto){
-        if (preco > 70)
-            return preco - preco * desconto/ 100;
+    public double calcularDesconto() {
+        double valorDesconto = 10.0;
+        if (preco > 70) {
+            System.out.println("Você possui um cupom de desconto!");
+            return preco - valorDesconto;
+        }
         return preco;
-
-    }
-
-
-    //+exibirDetalhes():VOID
-    public void exibirDetalhes(){
-        avaliacao = 0;
-        Scanner leitor = new Scanner(System.in);
-        System.out.printf("Digite o nome do produto que você deseja comprar: ");
-        nome = leitor.nextLine();
-
-
     }
 
     public String getNome() {
@@ -99,5 +90,20 @@ public abstract class Produto  {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+    public TipoCategoriaEnum getTipocategoria() {
+        return tipocategoria;
+    }
+
+    public void setTipocategoria(TipoCategoriaEnum tipocategoria) {
+        this.tipocategoria = tipocategoria;
+    }
+
+    public TipoProdutoEnum getTipoproduto() {
+        return tipoproduto;
+    }
+
+    public void setTipoproduto(TipoProdutoEnum tipoproduto) {
+        this.tipoproduto = tipoproduto;
     }
 }

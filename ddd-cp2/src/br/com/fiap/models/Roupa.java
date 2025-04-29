@@ -8,15 +8,11 @@ import java.util.Scanner;
 public class Roupa extends Produto{
 
     //atributos
-    protected String tamanho;
+    private String tamanho;
     private String cor;
     private String material;
-    private TipoCategoriaEnum tipocategoria;
-    private TipoProdutoEnum tipoproduto;
 
-    public void exibirDetalhes(){
 
-    }
     @Override
     public void exibirProduto(){
         System.out.println("Descrição do produto:");
@@ -51,8 +47,6 @@ public class Roupa extends Produto{
         this.cor = cor;
     }
 
-
-
     public String getMaterial() {
         return material;
     }
@@ -61,19 +55,5 @@ public class Roupa extends Produto{
         this.material = material;
     }
 
-    public TipoCategoriaEnum getTipocategoria() {
-        return tipocategoria;
-    }
 
-    public void setTipocategoria(TipoCategoriaEnum tipocategoria) {
-        this.tipocategoria = tipocategoria;
-    }
-
-    public TipoProdutoEnum getTipoproduto() {
-        return tipoproduto;
-    }
-
-    public void setTipoproduto(TipoProdutoEnum tipoproduto) {
-        this.tipoproduto = tipoproduto;
-    }
 }

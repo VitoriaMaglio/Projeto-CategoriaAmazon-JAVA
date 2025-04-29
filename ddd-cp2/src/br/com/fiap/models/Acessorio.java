@@ -1,9 +1,6 @@
 package br.com.fiap.models;
 
-import br.com.fiap.enums.TipoCategoriaEnum;
-import br.com.fiap.enums.TipoProdutoEnum;
-
-public class Calcado extends Produto{
+public class Acessorio extends Produto{
     //atributos
     private String tamanho;
     private String cor;
