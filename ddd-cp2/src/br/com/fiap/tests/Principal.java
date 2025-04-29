@@ -24,7 +24,7 @@ public class Principal {
         else
             roupa.setTipoproduto(TipoProdutoEnum.ACESSORIO);
 
-        System.out.println("\n=============================");
+        System.out.println("=============================");
 
         System.out.println(" Categorias de produtos: \n1-Feminino\n2-Masculino\n3-Infantil e bebê\n4-Esportes" + "\nInforme a categoria do seu produto:");
         int opcao = leitorNumerico.nextInt();
@@ -37,7 +37,7 @@ public class Principal {
         else
             roupa.setTipocategoria(TipoCategoriaEnum.ESPORTE);
 
-        System.out.println("\n=============================");
+        System.out.println("=============================");
 
         System.out.println(" Informe o nome do seu produto: ");
         roupa.setNome(leitor.nextLine());
@@ -61,7 +61,7 @@ public class Principal {
 
         roupa.exibirProduto();
 
-        System.out.println("\n=============================");
+        System.out.println("=============================");
         System.out.println(" Preço do produto com desconto: " + roupa.calcularDesconto());
 
 

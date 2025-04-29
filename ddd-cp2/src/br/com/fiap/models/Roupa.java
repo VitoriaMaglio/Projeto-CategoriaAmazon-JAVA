@@ -27,9 +27,7 @@ public class Roupa extends Produto{
 
     }
 
-    public void disponivel(){
 
-    }
 
     public String getTamanho() {
         return tamanho;
