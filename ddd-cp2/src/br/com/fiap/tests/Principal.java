@@ -46,10 +46,7 @@ public class Principal {
         System.out.println(" Informe o preço do seu produto: ");
         roupa.setPreco(leitor.nextDouble());
         leitor.nextLine(); // consome a quebra de linha pendente
-
-        System.out.println(" Informe a avaliação do seu produto: ");
-        roupa.setAvaliacao(leitor.nextInt());
-        leitor.nextLine(); // consome a quebra de linha pendente
+        // consome a quebra de linha pendente
 
         System.out.println(" Informe o tamanho do seu produto: ");
         roupa.setTamanho(leitor.nextLine());

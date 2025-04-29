@@ -29,12 +29,14 @@ public abstract class Produto  {
     //+calcularDesconto():double
     public double calcularDesconto() {
         double valorDesconto = 10.0;
-        if (preco > 70) {
+        if (preco > 90) {
             System.out.println(" O valor do seu produto se encaixa no desconto! Você possui um cupom de 10%!");
             return preco - valorDesconto;
         }
         return preco;
     }
+
+
 
     public String getNome() {
         return nome;
