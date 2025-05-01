@@ -9,7 +9,6 @@ public class Calcado extends Produto{
     private String cor;
     private String material;
 
-
     public String getCor() {
         return cor;
     }

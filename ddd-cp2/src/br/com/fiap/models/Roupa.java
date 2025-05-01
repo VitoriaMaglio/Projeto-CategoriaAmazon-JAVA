@@ -12,7 +12,6 @@ public class Roupa extends Produto{
     private String cor;
     private String material;
 
-
     @Override
     public void exibirProduto(){
         System.out.println("Descrição do produto:");
@@ -20,14 +19,11 @@ public class Roupa extends Produto{
         System.out.println("Categoria: " + getTipocategoria());
         System.out.println("Marca: " + getMarca());
         System.out.println("Preço: " + getPreco());
-        System.out.println("Avaliação: " + getAvaliacao());
         System.out.println("Tamanho: " + getTamanho());
         System.out.println("Cor: " + getCor());
         System.out.println("Material: " + getMaterial());
 
     }
-
-
 
     public String getTamanho() {
         return tamanho;
