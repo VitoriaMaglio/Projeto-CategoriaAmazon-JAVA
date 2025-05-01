@@ -57,9 +57,6 @@ public class Principal {
         System.out.println(" Preço do produto: " + roupa.calcularDesconto());
 
 
-
-
-
         System.out.println("Você gostaria de saber mais sobre nossos produto?");
         System.out.println("1 - Sim");
         System.out.println("2 - Não");

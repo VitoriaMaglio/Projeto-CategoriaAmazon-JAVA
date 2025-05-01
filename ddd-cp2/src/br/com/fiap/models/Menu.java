@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Menu extends Produto{
 
-
     //+exibirMenu():VOID
     @Override
     public void exibirMenu(){
