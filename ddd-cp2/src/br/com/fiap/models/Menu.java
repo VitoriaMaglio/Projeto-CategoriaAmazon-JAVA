@@ -1,3 +1,6 @@
+//Vitória Valentina Maglio RM563509
+//Felipe Maglio Filho RM563512
+//Tema sorteado: Roupas, calçados e acessórios
 package br.com.fiap.models;
 
 import java.util.Scanner;
